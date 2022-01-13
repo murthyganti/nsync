@@ -10,7 +10,7 @@
     "start:frontend": "ng serve frontend",
     "start:backend": "ng serve backend",
     "build": "ng build --prod backend && ng build --prod frontend",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "ng build --prod backend && ng build --prod frontend",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "affected:apps": "nx affected:apps",
